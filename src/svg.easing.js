@@ -1,6 +1,6 @@
 // Based on Easing Equations (c) 2003 [Robert Penner](http://www.robertpenner.com/), all rights reserved.
 
-SVG.easing = {
+SVG.extend(SVG.easing, {
   
   quadIn: function(pos) {
     return Math.pow(pos, 2)
@@ -168,7 +168,7 @@ SVG.easing = {
     return Math.pow(2, -10 * pos) * Math.sin((pos - 0.075) * (2 * Math.PI) / .3) + 1
   }
 
-}
+});
 
 
 
